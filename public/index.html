@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Bakery Ordering System</title>
     <link rel="stylesheet" href="style.css">
-    <!-- استدعاء مكتبة الأيقونات (FontAwesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -12,34 +11,109 @@
         <h1>Welcome to Our Bakery</h1>
         <nav>
             <a href="/">Home</a> | 
-            <a href="#">Login</a> | 
+            <a href="cart.html">Cart (السلة)</a> | 
             <a href="#">Register</a>
         </nav>
     </header>
 
     <main>
-        <h2>Our Delicious Cakes</h2>
-        
+        <!-- قسم الحلي -->
+        <h2>قسم الحلي</h2>
         <div class="cake-container">
-            
-            <!-- الكيكة الأولى -->
+            <!-- 1 -->
             <div class="cake">
-                <h3>Chocolate Cake</h3> <!-- الاسم -->
-                <img src= "image\cake1.jpg" alt="Chocolate Cake"> <!-- الصورة -->
-                <p class="desc">Rich chocolate, cocoa, fresh eggs, and butter.</p> <!-- الوصف -->
-                <p class="price">Price: 15.00ريال</p> <!-- السعر -->
-                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button> <!-- الزر الأخضر -->
+                <h3>Chocolate Cake</h3>
+                <img src="image/cake1.jpg" alt="Chocolate Cake">
+                <p class="desc">Rich chocolate and fresh eggs.</p>
+                <p class="price">السعر: 15.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Chocolate Cake', 15)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
             </div>
-
-            <!-- الكيكة الثانية -->
+            <!-- 2 -->
             <div class="cake">
                 <h3>Vanilla Cake</h3>
-                <img src="image\photo_2026-11-20_16-09-28.jpg" alt="Vanilla Cake">
-                <p class="desc">Sweet vanilla extract, flour, milk, and sugar.</p>
-                <p class="price">Price: 12.00ريال</p>
-                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <img src="image\cake2.jpg" alt="Vanilla Cake">
+                <p class="desc">Sweet vanilla extract and milk.</p>
+                <p class="price">السعر: 12.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Vanilla Cake', 12)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
             </div>
+            <!-- 3 -->
+            <div class="cake">
+                <h3>Strawberry Cake</h3>
+                <img src="image\cake3.jpeg" alt="Strawberry Cake">
+                <p class="desc">Fresh strawberries and cream.</p>
+                <p class="price">السعر : 18.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Strawberry Cake', 18)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 4 -->
+            <div class="cake">
+                <h3>Red Velvet</h3>
+                <img src="image\cake4.jpg" alt="Red Velvet">
+                <p class="desc">Classic red velvet with cheese frosting.</p>
+                <p class="price">السعر : 20.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Red Velvet', 20)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 5 -->
+            <div class="cake">
+                <h3>Carrot Cake</h3>
+                <img src="image\cake5.jpg" alt="Carrot Cake">
+                <p class="desc">Spiced carrot cake with walnuts.</p>
+                <p class="price">السعر : 14.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Carrot Cake', 14)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 6 -->
+            <div class="cake">
+                <h3>Lemon Cake</h3>
+                <img src="image\cake6.jpg" alt="Lemon Cake">
+                <p class="desc">Zesty lemon flavor with glaze.</p>
+                <p class="price">السعر: 16.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Lemon Cake', 16)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+        </div>
 
+        <!-- قسم الموالح -->
+        <h2>قسم الموالح</h2>
+        <div class="cake-container">
+            <!-- 1 -->
+            <div class="cake">
+                <h3>Cheese Fatayer</h3>
+                <img src="image\savory1.jpg" alt="Cheese Fatayer">
+                <p class="desc">Delicious cheese pastry.</p>
+                <p class="price">السعر: 5.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Cheese Fatayer', 5)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 2 -->
+            <div class="cake">
+                <h3>Spinach Fatayer</h3>
+                <img src="image\savory2.jpg" alt="Spinach Fatayer">
+                <p class="desc">Healthy spinach with onions.</p>
+                <p class="price">السعر: 4.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Spinach Fatayer', 4)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 3 -->
+            <div class="cake">
+                <h3>Meat Pie</h3>
+                <img src="image\savory3.jpeg" alt="Meat Pie">
+                <p class="desc">Minced meat with spices.</p>
+                <p class="price">السعر: 7.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Meat Pie', 7)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 4 -->
+            ->
+            <div class="cake">
+                <h3>Chicken Puff</h3>
+                <img src="image\savory5.jpeg" alt="Chicken Puff">
+                <p class="desc">Shredded chicken in pastry.</p>
+                <p class="price">السعر: 6.00 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Chicken Puff', 6)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- 6 -->
+            <div class="cake">
+                <h3>Sambousek</h3>
+                <img src="image\savory6.jpeg" alt="Sambousek">
+                <p class="desc">Crispy meat sambousek.</p>
+                <p class="price">السعر: 4.50 ريال</p>
+                <button class="cart-btn" onclick="addToCart('Sambousek', 4.5)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
         </div>
     </main>
 

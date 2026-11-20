@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #8b135d;
+    background-color: #8B4513;
     color: white;
     padding: 15px;
 }
@@ -19,11 +19,16 @@ nav a {
     font-weight: bold;
 }
 
+h2 {
+    color: #8B4513;
+    margin-top: 40px;
+}
+
 .cake-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
@@ -61,11 +66,10 @@ nav a {
 .cake .price {
     font-size: 18px;
     font-weight: bold;
-    color: #982662;
+    color: #8B4513;
     margin: 10px 0;
 }
 
-/* تنسيق الزر الأخضر وأيقونة السلة */
 .cart-btn {
     background-color: #28a745;
     color: white;
@@ -83,4 +87,17 @@ nav a {
 .cart-btn:hover {
     background-color: #218838;
     transform: scale(1.05);
+}
+
+/* تنسيق رسالة الشكر والتاريخ */
+#thanks {
+    color: #28a745;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+#date-display {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
 }
