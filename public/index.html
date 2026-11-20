@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استدعاء مكتبة الأيقونات (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bakery</h1>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="#">Login</a> | 
+            <a href="#">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Delicious Cakes</h2>
+        
+        <div class="cake-container">
+            
+            <!-- الكيكة الأولى -->
+            <div class="cake">
+                <h3>Chocolate Cake</h3> <!-- الاسم -->
+                <img src= "image\cake1.jpg" alt="Chocolate Cake"> <!-- الصورة -->
+                <p class="desc">Rich chocolate, cocoa, fresh eggs, and butter.</p> <!-- الوصف -->
+                <p class="price">Price: 15.00ريال</p> <!-- السعر -->
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button> <!-- الزر الأخضر -->
+            </div>
+
+            <!-- الكيكة الثانية -->
+            <div class="cake">
+                <h3>Vanilla Cake</h3>
+                <img src="image\photo_2026-11-20_16-09-28.jpg" alt="Vanilla Cake">
+                <p class="desc">Sweet vanilla extract, flour, milk, and sugar.</p>
+                <p class="price">Price: 12.00ريال</p>
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
